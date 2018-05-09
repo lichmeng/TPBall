@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开始"
+            android:textColor="#99baab35" />
+        <Button
+            android:id="@+id/btn_pause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="暂停"
+            android:textColor="#99baab35" />
+
+    </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    <FrameLayout
+        android:background="#99003300"
+        android:id="@+id/pg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+        android:id="@+id/iv_ball"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_gravity="center"
+        android:src="@drawable/shape_circle" />
+
+
+    </FrameLayout>
+
+
+
+</LinearLayout>
