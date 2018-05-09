@@ -11,6 +11,8 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.nineoldandroids.animation.ObjectAnimator;
+
 import play.lcm.tpball.R;
 
 /**
@@ -96,13 +98,13 @@ public class SensorTestActivity extends AppCompatActivity  implements SensorEven
 
     public void adjustPosiotion(float x,float y){
 
-        int l = (int) (viewById.getX()+x);
-        int t = (int) (viewById.getY()+y);
-        int r = l+measuredWidth;
-        int b = t+measuredHeight;
+//        viewById.setTranslationX(x);
+//        viewById.setTranslationY(y);
 
-        viewById.setTranslationX(x);
-        viewById.setTranslationY(y);
+
+        ObjectAnimator.ofFloat(viewById,"TranslationX" ,x).start();
+        ObjectAnimator.ofFloat(viewById,"TranslationY" ,y).start();
+
 
 
     }
